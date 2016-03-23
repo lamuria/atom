@@ -1,0 +1,44 @@
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+exports.provideService = provideService;
+exports.provideServiceV2 = provideServiceV2;
+exports.provideServiceV3 = provideServiceV3;
+
+var _autohideTreeViewJs = require('./autohide-tree-view.js');
+
+// provide service for other packages to control the tree view
+'use babel';
+
+function provideService() {
+  return {
+    showTreeView: _autohideTreeViewJs.showTreeView,
+    hideTreeView: _autohideTreeViewJs.hideTreeView,
+    enableAutohide: _autohideTreeViewJs.enableAutohide,
+    disableAutohide: _autohideTreeViewJs.disableAutohide
+  };
+}
+
+function provideServiceV2() {
+  return {
+    showTreeView: _autohideTreeViewJs.showTreeView,
+    hideTreeView: _autohideTreeViewJs.hideTreeView,
+    isTreeViewVisible: _autohideTreeViewJs.isTreeViewVisible,
+    enableAutohide: _autohideTreeViewJs.enableAutohide,
+    disableAutohide: _autohideTreeViewJs.disableAutohide,
+    isAutohideEnabled: _autohideTreeViewJs.isAutohideEnabled
+  };
+}
+
+function provideServiceV3() {
+  return {
+    showTreeView: _autohideTreeViewJs.showTreeView,
+    hideTreeView: _autohideTreeViewJs.hideTreeView,
+    isTreeViewVisible: _autohideTreeViewJs.isTreeViewVisible,
+    pin: _autohideTreeViewJs.enableAutohide,
+    unpin: _autohideTreeViewJs.disableAutohide,
+    isPinned: _autohideTreeViewJs.isAutohideEnabled
+  };
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9tYXJjb3NsYW11cmlhLy5hdG9tL3BhY2thZ2VzL2F1dG9oaWRlLXRyZWUtdmlldy9saWIvc2VydmljZS1wcm92aWRlci5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7O2tDQUUyRCx5QkFBeUI7OztBQUZwRixXQUFXLENBQUM7O0FBS0wsU0FBUyxjQUFjLEdBQUc7QUFDL0IsU0FBTztBQUNMLGdCQUFZLGtDQUFBO0FBQ1osZ0JBQVksa0NBQUE7QUFDWixrQkFBYyxvQ0FBQTtBQUNkLG1CQUFlLHFDQUFBO0dBQ2hCLENBQUM7Q0FDSDs7QUFFTSxTQUFTLGdCQUFnQixHQUFHO0FBQ2pDLFNBQU87QUFDTCxnQkFBWSxrQ0FBQTtBQUNaLGdCQUFZLGtDQUFBO0FBQ1oscUJBQWlCLHVDQUFBO0FBQ2pCLGtCQUFjLG9DQUFBO0FBQ2QsbUJBQWUscUNBQUE7QUFDZixxQkFBaUIsdUNBQUE7R0FDbEIsQ0FBQztDQUNIOztBQUVNLFNBQVMsZ0JBQWdCLEdBQUc7QUFDakMsU0FBTztBQUNMLGdCQUFZLGtDQUFBO0FBQ1osZ0JBQVksa0NBQUE7QUFDWixxQkFBaUIsdUNBQUE7QUFDakIsT0FBRyxvQ0FBZ0I7QUFDbkIsU0FBSyxxQ0FBaUI7QUFDdEIsWUFBUSx1Q0FBbUI7R0FDNUIsQ0FBQztDQUNIIiwiZmlsZSI6Ii9Vc2Vycy9tYXJjb3NsYW11cmlhLy5hdG9tL3BhY2thZ2VzL2F1dG9oaWRlLXRyZWUtdmlldy9saWIvc2VydmljZS1wcm92aWRlci5qcyIsInNvdXJjZXNDb250ZW50IjpbIid1c2UgYmFiZWwnO1xuaW1wb3J0IHtzaG93VHJlZVZpZXcsIGhpZGVUcmVlVmlldywgaXNUcmVlVmlld1Zpc2libGUsXG4gIGVuYWJsZUF1dG9oaWRlLCBkaXNhYmxlQXV0b2hpZGUsIGlzQXV0b2hpZGVFbmFibGVkfSBmcm9tICcuL2F1dG9oaWRlLXRyZWUtdmlldy5qcyc7XG5cbi8vIHByb3ZpZGUgc2VydmljZSBmb3Igb3RoZXIgcGFja2FnZXMgdG8gY29udHJvbCB0aGUgdHJlZSB2aWV3XG5leHBvcnQgZnVuY3Rpb24gcHJvdmlkZVNlcnZpY2UoKSB7XG4gIHJldHVybiB7XG4gICAgc2hvd1RyZWVWaWV3LFxuICAgIGhpZGVUcmVlVmlldyxcbiAgICBlbmFibGVBdXRvaGlkZSxcbiAgICBkaXNhYmxlQXV0b2hpZGUsXG4gIH07XG59XG5cbmV4cG9ydCBmdW5jdGlvbiBwcm92aWRlU2VydmljZVYyKCkge1xuICByZXR1cm4ge1xuICAgIHNob3dUcmVlVmlldyxcbiAgICBoaWRlVHJlZVZpZXcsXG4gICAgaXNUcmVlVmlld1Zpc2libGUsXG4gICAgZW5hYmxlQXV0b2hpZGUsXG4gICAgZGlzYWJsZUF1dG9oaWRlLFxuICAgIGlzQXV0b2hpZGVFbmFibGVkLFxuICB9O1xufVxuXG5leHBvcnQgZnVuY3Rpb24gcHJvdmlkZVNlcnZpY2VWMygpIHtcbiAgcmV0dXJuIHtcbiAgICBzaG93VHJlZVZpZXcsXG4gICAgaGlkZVRyZWVWaWV3LFxuICAgIGlzVHJlZVZpZXdWaXNpYmxlLFxuICAgIHBpbjogZW5hYmxlQXV0b2hpZGUsXG4gICAgdW5waW46IGRpc2FibGVBdXRvaGlkZSxcbiAgICBpc1Bpbm5lZDogaXNBdXRvaGlkZUVuYWJsZWQsXG4gIH07XG59XG4iXX0=
+//# sourceURL=/Users/marcoslamuria/.atom/packages/autohide-tree-view/lib/service-provider.js
