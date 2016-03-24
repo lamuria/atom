@@ -15,6 +15,12 @@
       "language-sass"
       "language-toml"
       "metrics"
+      "wrap-guide"
+      "welcome"
+      "styleguide"
+      "open-on-github"
+      "language-xml"
+      "language-ruby-on-rails"
     ]
   editor:
     invisibles: {}
